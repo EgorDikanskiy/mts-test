@@ -13,6 +13,8 @@
    - Frontend: http://localhost
    - Backend (Strapi Admin): http://localhost:1337/admin
 
+**Примечание:** Все настройки Strapi (контент, роли, разрешения) сохраняются между запусками благодаря Docker volumes.
+
 ## Остановка проекта
 
 ```bash
