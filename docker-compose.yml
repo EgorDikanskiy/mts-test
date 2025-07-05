@@ -6,7 +6,7 @@ services:
       - "1337:1337"
     volumes:
       - ./mts-test-backend/data/uploads:/app/data/uploads
-      - strapi_database:/app/data
+      - ./mts-test-backend/.tmp/data.db:/app/.tmp/data.db
       - strapi_config:/app/config
     env_file:
       - ./mts-test-backend/.env
@@ -20,5 +20,4 @@ services:
       - backend 
 
 volumes:
-  strapi_database:
   strapi_config: 
